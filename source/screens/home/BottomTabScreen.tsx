@@ -4,6 +4,7 @@ import React from 'react';
 import { useAppTheme } from '../../hooks/useAppTheme';
 import HomeTab from './tabs/HomeTab';
 import ProfileScreen from './tabs/ProfileScreen';
+import VoiceNavigate from './tabs/VoiceNavigate';
 
 const Tab = createBottomTabNavigator();
 
@@ -35,6 +36,14 @@ const BottomTabScreen = () => {
       <Tab.Screen
         name="ProfileScreen"
         component={ProfileScreen}
+        options={{
+          tabBarLabel: 'My Profile',
+          tabBarIcon: ({color, size}) => <User size={size} color={color} />,
+        }}
+      />
+      <Tab.Screen
+        name="VoiceNavigate"
+        component={VoiceNavigate}
         options={{
           tabBarLabel: 'My Profile',
           tabBarIcon: ({color, size}) => <User size={size} color={color} />,
