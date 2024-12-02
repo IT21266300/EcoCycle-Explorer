@@ -18,6 +18,7 @@ import SplashScreen from './screens/auth/SplashScreen';
 import BottomTabScreen from './screens/home/BottomTabScreen.tsx';
 import { DarkThemeColors, LightThemeColors } from './themes/theme';
 import UserPreferencesScreen from './screens/routeSuggestions/UserPreferences.tsx';
+import CurrentLocationScreen from './screens/voiceNavigate/CurrentLocationScreen.js';
 
 const Stack = createNativeStackNavigator();
 
@@ -51,6 +52,11 @@ export default function App() {
           />
           <Stack.Screen name="SignIn" component={SignInScreen} />
           <Stack.Screen name="SignUp" component={SignUpScreen} />
+          <Stack.Screen
+          name="CurrentLocation"
+          component={CurrentLocationScreen}
+          options={{ title: 'Current Location' }}
+        />
           <Stack.Screen name="BottomTab" component={BottomTabScreen} />
           <Stack.Screen name="UserPreferences" component={UserPreferencesScreen}/>
         </Stack.Navigator>
