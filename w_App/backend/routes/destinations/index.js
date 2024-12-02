@@ -15,7 +15,7 @@ router.route("/add").post((req,res)=>{
     const newDestination = new Destination({
         destination,
         description,
-        latitude,
+        latitude, 
         longitude
     })
 
