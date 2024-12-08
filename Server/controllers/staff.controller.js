@@ -9,7 +9,7 @@ import StaffModel from '../Models/StaffModel.js';
 const router = express.Router();
 
 // Sign-up
-export const signUp = expressAsyncHandler(async (req, res) => {
+export const staffsignUp = expressAsyncHandler(async (req, res) => {
   const { name, employeeType, email, password } = req.body;
   const hashedPassword = await bcrypt.hash(password, 10);
   const newStaff = new StaffModel({ name, employeeType, email, password: hashedPassword });
@@ -18,7 +18,7 @@ export const signUp = expressAsyncHandler(async (req, res) => {
 });
 
 // Sign-in
-export const signIn = expressAsyncHandler(async (req, res) => {
+export const staffSignIn = expressAsyncHandler(async (req, res) => {
   const { email, password } = req.body;
   const staff = await StaffModel.findOne({ email });
   if (!staff) {
