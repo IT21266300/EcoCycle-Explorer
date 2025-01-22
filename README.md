@@ -99,8 +99,6 @@ The architecture integrates:
 - **MongoDB**: For user data and app metadata storage.  
 
 ### IoT Device for Health Monitoring:
-An IoT device was developed as part of this project to monitor cyclists' health metrics and integrate them into the application.
-Key Components
 - **Arduino Uno**: Microcontroller used to build the IoT device.
 - **Sensors**: Heart rate sensor
 - **Communication Module**: Bluetooth module (e.g., HC-05) for transmitting data to the mobile app.
@@ -127,6 +125,12 @@ Key Components
 - Design a system that offers real-time voice guidance for cyclists.
 - Ensure the system accurately identifies and announces landmarks.
 - Integrate GPS and mapping technologies for precise navigation.
+
+### **Health Monitoring**  
+- Design a system that monitor cyclists' health metrics and alerts.
+- Build an IoT device to monitor cyclists' health metrics.
+- Utilize machine learning algorithms to detect deviations from user baseline health data.
+  
 
 ### **Develop Team and Individual Ride**  
 - Create options for both solo rides and group navigation.
